@@ -9,20 +9,37 @@
 
 import 'package:flutter/widgets.dart';
 
+class $AssetsIconsGen {
+  const $AssetsIconsGen();
+
+  /// File path: assets/icons/hashtagicon.png
+  AssetGenImage get hashtagicon =>
+      const AssetGenImage('assets/icons/hashtagicon.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [hashtagicon];
+}
+
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
   /// File path: assets/images/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
+
+  /// File path: assets/images/poster.png
   AssetGenImage get poster => const AssetGenImage('assets/images/poster.png');
 
+  /// File path: assets/images/poster.png
+  AssetGenImage get blue_pen => const AssetGenImage('assets/images/poster.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [logo];
+  List<AssetGenImage> get values => [logo, poster];
 }
 
 class Assets {
   Assets._();
 
+  static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 
